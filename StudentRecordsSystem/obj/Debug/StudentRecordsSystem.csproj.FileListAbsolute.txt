@@ -10,3 +10,4 @@ C:\Users\sharo\Desktop\TRPO\StudentRecordsSystem\StudentRecordsSystem\obj\Debug\
 C:\Users\sharo\Desktop\TRPO\StudentRecordsSystem\StudentRecordsSystem\bin\Debug\Db\Database1.mdf
 C:\Users\sharo\Desktop\TRPO\StudentRecordsSystem\StudentRecordsSystem\bin\Debug\Db\Database1_log.ldf
 C:\Users\sharo\Desktop\TRPO\StudentRecordsSystem\StudentRecordsSystem\bin\Debug\StudentRecordsSystem.exe.config
+C:\Users\sharo\Desktop\TRPO\StudentRecordsSystem\StudentRecordsSystem\obj\Debug\StudentRecordsSystem.csprojResolveAssemblyReference.cache

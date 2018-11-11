@@ -25,6 +25,7 @@ namespace StudentRecordsSystem
         public void Stop()
         {
             this.Close();
+            this.Dispose();
         }
        
 

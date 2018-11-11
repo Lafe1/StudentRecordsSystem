@@ -125,10 +125,12 @@ namespace StudentRecordsSystem
                 reader.Close();
 
                 myConnection.Close();
+                myConnection.Dispose();
 
                 foreach (string[] s in data)
                     dataGridView2.Rows.Add(s);
             }
+
         }
 
         private void базаЛичныхДелСтудентовBindingSource_CurrentChanged(object sender, EventArgs e)
@@ -229,8 +231,8 @@ namespace StudentRecordsSystem
 
         private void выходToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Validate();
             m_parent.Stop();
+
         }
 
         private void база_личных_дел_студентовDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -365,6 +367,11 @@ namespace StudentRecordsSystem
             {
                 MessageBox.Show("Ошибка, проверьте данные!");
             }
+            finally
+            {
+                myConnection.Close();
+                myConnection.Dispose();
+            }
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -394,6 +401,11 @@ namespace StudentRecordsSystem
                 {
                     MessageBox.Show("Ошибка, проверьте данные!");
                 }
+                finally
+                {
+                    myConnection.Close();
+                    myConnection.Dispose();
+                }
             }
             if (radioButton2.Checked)
             {
@@ -409,6 +421,11 @@ namespace StudentRecordsSystem
                 catch
                 {
                     MessageBox.Show("Ошибка, проверьте данные!");
+                }
+                finally
+                {
+                    myConnection.Close();
+                    myConnection.Dispose();
                 }
             }
 
@@ -472,6 +489,11 @@ namespace StudentRecordsSystem
             catch
             {
                 MessageBox.Show("Ошибка, прверьте данные!");
+            }
+            finally
+            {
+                myConnection.Close();
+                myConnection.Dispose();
             }
         }
     }
